@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  account_name: MyString
+  sbx_hostname: MyString
+  prod_hostname: MyString
+  region: MyString
+  subregion: MyString
+
+two:
+  account_name: MyString
+  sbx_hostname: MyString
+  prod_hostname: MyString
+  region: MyString
+  subregion: MyString

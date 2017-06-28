@@ -1,0 +1,27 @@
+<%= form_for(prod_instance) do |f| %>
+  <% if prod_instance.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(prod_instance.errors.count, "error") %> prohibited this prod_instance from being saved:</h2>
+
+      <ul>
+      <% prod_instance.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :account_name %>
+    <%= f.text_field :account_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :hostname %>
+    <%= f.text_field :hostname %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

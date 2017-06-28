@@ -1,0 +1,2 @@
+class ProdInstance < ApplicationRecord
+end

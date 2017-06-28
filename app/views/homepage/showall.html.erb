@@ -1,0 +1,24 @@
+<body>
+  <html>
+  <%= link_to "HOME" %>
+<H1> List of customers</H1>
+
+<table>
+
+<% @variable_temp.each do |var| %>
+<tr>
+    <td><%= var.Last_Name %></td>
+    <td><%= var.First_Name %></td>
+    <td><%= var.Company_Name %></td>
+    <td><%= var.Email_Address %></td>
+    <td><%= var.Prod_Instance %></td>
+</tr>
+<% end %>
+</table>
+
+
+
+
+<%= yield %>
+</html>
+</body>

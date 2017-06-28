@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+<%= link_to 'New Prod Instance', new_prod_instance_path %>
+<h1>Prod Instances</h1>
+
+<table>
+  <thead>
+    <tr align="left">
+      <th>Hostname</th>
+      <th>Account name</th>
+
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+<% instanceId = Array.new %>
+  <tbody align="left">
+    <% @prod_instances.each do |prod_instance| %>
+      <tr>
+        <td><input type="checkbox" name="instance" value=prod_instance.hostname><%= prod_instance.hostname %></td>
+        <% instanceId.push prod_instance.hostname %>
+
+        <td><%= prod_instance.account_name %></td>
+        <td><%= link_to 'Show', prod_instance %></td>
+        <td><%= link_to 'Edit', edit_prod_instance_path(prod_instance) %></td>
+        <td><%= link_to 'Destroy', prod_instance, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Prod Instance', new_prod_instance_path %>

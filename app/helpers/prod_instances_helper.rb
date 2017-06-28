@@ -1,0 +1,2 @@
+module ProdInstancesHelper
+end

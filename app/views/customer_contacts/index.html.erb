@@ -1,0 +1,48 @@
+<p id="notice"><%= notice %></p>
+<%= link_to 'New Customer Contact', new_customer_contact_path %>
+
+<!-- <form align="right" >
+Search :
+<input  type="text" name="itemsearch">
+</form> -->
+<h1>Customer Contacts</h1>
+<% if @customer_contacts.blank? %>
+  <h4>There are no contacts containing the term <%= params[:search] %>.</h4>
+<% end %>
+<div class="media">
+  <div class="media-body">
+    <table class="table table-hover">
+      <thead>
+        <tr align="left">
+          <th>ID</th>
+          <th>Last name</th>
+          <th>First name</th>
+          <th>Company name</th>
+          <th>Email address</th>
+          <th>Prod instance</th>
+          <th colspan="6"></th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @customer_contacts.each do |customer_contact| %>
+          <tr>
+            <td><%= customer_contact.id %></td>
+            <td><%= customer_contact.Last_Name %></td>
+            <td><%= customer_contact.First_Name %></td>
+            <td><%= customer_contact.Company_Name %></td>
+            <td><%= customer_contact.Email_Address %></td>
+            <td><%= customer_contact.Prod_Instance %></td>
+            <td><%= link_to 'Show', customer_contact, class: 'btn btn-mini' %></td>
+            <td><%= link_to 'Edit', edit_customer_contact_path(customer_contact), class: 'btn btn-mini btn-success' %></td>
+            <td><%= link_to 'Destroy', customer_contact, method: :delete, class: 'btn btn-mini btn-danger', data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
+<br>

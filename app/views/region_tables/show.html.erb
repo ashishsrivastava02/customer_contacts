@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Account name:</strong>
+  <%= @region_table.account_name %>
+</p>
+
+<p>
+  <strong>Sbx hostname:</strong>
+  <%= @region_table.sbx_hostname %>
+</p>
+
+<p>
+  <strong>Prod hostname:</strong>
+  <%= @region_table.prod_hostname %>
+</p>
+
+<p>
+  <strong>Region:</strong>
+  <%= @region_table.region %>
+</p>
+
+<p>
+  <strong>Subregion:</strong>
+  <%= @region_table.subregion %>
+</p>
+
+<%= link_to 'Edit', edit_region_table_path(@region_table) %> |
+<%= link_to 'Back', region_tables_path %>
