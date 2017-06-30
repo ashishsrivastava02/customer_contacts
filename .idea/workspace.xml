@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38c137f2-9c83-444a-b6e1-9c856abb4d59" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20170401085003_create_prod_instances.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Customer_contacts.iml" afterPath="$PROJECT_DIR$/.idea/Customer_contacts.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -137,7 +130,7 @@
         <entry file="file://$PROJECT_DIR$/app/models/user.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="4" column="76" lean-forward="false" selection-start-line="4" selection-start-column="76" selection-end-line="4" selection-end-column="76" />
+              <caret line="4" column="76" lean-forward="true" selection-start-line="4" selection-start-column="76" selection-end-line="4" selection-end-column="76" />
               <folding />
             </state>
           </provider>
@@ -787,7 +780,7 @@
       <updated>1497445061063</updated>
       <workItem from="1497445064731" duration="303000" />
       <workItem from="1498820000635" duration="816000" />
-      <workItem from="1498820926427" duration="3365000" />
+      <workItem from="1498820926427" duration="3619000" />
     </task>
     <servers />
   </component>
@@ -797,7 +790,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4484000" />
+    <option name="totallyTimeSpent" value="4738000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -973,7 +966,7 @@
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="76" lean-forward="false" selection-start-line="4" selection-start-column="76" selection-end-line="4" selection-end-column="76" />
+          <caret line="4" column="76" lean-forward="true" selection-start-line="4" selection-start-column="76" selection-end-line="4" selection-end-column="76" />
           <folding />
         </state>
       </provider>
