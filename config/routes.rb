@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   mount RailsAdmin::Engine => '/n', as: 'rails_admin'
   resources :region_tables
   resources :prod_instances
