@@ -1,20 +1,29 @@
 <p id="notice"><%= notice %></p>
-<%= link_to 'New Customer Contact', new_customer_contact_path %>
+
 
 <!-- <form align="right" >
 Search :
 <input  type="text" name="itemsearch">
 </form> -->
+
+
 <h1>Customer Contacts</h1>
 <% if @customer_contacts.blank? %>
   <h4>There are no contacts containing the term <%= params[:search] %>.</h4>
 <% end %>
+<h4><%= link_to 'New Customer Contact', new_customer_contact_path %></h4>
+
+
+<div class="digg_pagination">
+  <%= will_paginate @customer_contacts, :container => true %>
+</div>
+
 <div class="media">
   <div class="media-body">
     <table class="table table-hover">
       <thead>
         <tr align="left">
-          <th>ID</th>
+
           <th>Last name</th>
           <th>First name</th>
           <th>Company name</th>
@@ -30,7 +39,7 @@ Search :
       <tbody>
         <% @customer_contacts.each do |customer_contact| %>
           <tr>
-            <td><%= customer_contact.id %></td>
+
             <td><%= customer_contact.Last_Name %></td>
             <td><%= customer_contact.First_Name %></td>
             <td><%= customer_contact.Company_Name %></td>
@@ -46,3 +55,4 @@ Search :
   </div>
 </div>
 <br>
+

@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 <%= link_to 'New Prod Instance', new_prod_instance_path %>
 <h1>Prod Instances</h1>
-
+<%= will_paginate @prod_instance %>
 <table>
   <thead>
     <tr align="left">

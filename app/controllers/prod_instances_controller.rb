@@ -4,7 +4,7 @@ class ProdInstancesController < ApplicationController
   # GET /prod_instances
   # GET /prod_instances.json
   def index
-    @prod_instances = ProdInstance.all
+    @prod_instances = ProdInstance.paginate :page => params[:page], :per_page => 10
   end
 
   # GET /prod_instances/1

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Customer_contacts.iml" filepath="$PROJECT_DIR$/.idea/Customer_contacts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../coupa-release/.idea/coupa-release.iml" filepath="$PROJECT_DIR$/../coupa-release/.idea/coupa-release.iml" />
     </modules>
   </component>
 </project>

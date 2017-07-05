@@ -5,4 +5,5 @@ class CustomerContact < ApplicationRecord
 def self.search(search)
   where("Last_Name LIKE ? OR First_Name LIKE ? OR Company_Name LIKE ? OR Email_Address LIKE ? OR Prod_Instance LIKE ? ", "%#{search}%", "%#{search}%", "%#{search}%", "%#{search}%", "%#{search}%")
 end
+
 end
