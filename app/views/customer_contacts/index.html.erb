@@ -6,17 +6,19 @@ Search :
 <input  type="text" name="itemsearch">
 </form> -->
 
-
-<h1>Customer Contacts</h1>
-<% if @customer_contacts.blank? %>
-  <h4>There are no contacts containing the term <%= params[:search] %>.</h4>
+<body >
+<div align="right">
+<%= form_tag(customer_contacts_path, :method => "get", id: "search-form") do %>
+    <%= text_field_tag :search, params[:search], placeholder: "Search Contancts" %>
+    <%= submit_tag "Search", :name => nil %>
 <% end %>
-<h4><%= link_to 'New Customer Contact', new_customer_contact_path %></h4>
-
-
-<div class="digg_pagination">
-  <%= will_paginate @customer_contacts, :container => true %>
 </div>
+<h1 align="center">Customer and Partner Contacts</h1>
+<% if @customer_contacts.blank? %>
+  <h4 >There are no contacts containing the term <%= params[:search] %>.</h4>
+<% end %>
+
+<h4><%= link_to 'Add New Customer Contact', new_customer_contact_path %></h4>
 
 <div class="media">
   <div class="media-body">
@@ -55,4 +57,6 @@ Search :
   </div>
 </div>
 <br>
-
+<div align="center"  class="digg_pagination">
+  <%= will_paginate @customer_contacts, :container => true %>
+</div>

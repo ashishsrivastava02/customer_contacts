@@ -4,11 +4,11 @@ class CustomerContactsController < ApplicationController
   # GET /customer_contacts
   # GET /customer_contacts.json
   def index
-    @customer_contacts = CustomerContact.paginate :page => params[:page], :per_page => 30
+    @customer_contacts = CustomerContact.paginate :page => params[:page], :per_page => 20
     if params[:search]
         @customer_contacts = CustomerContact.search(params[:search]).order("Company_Name ASC").paginate :page => params[:page]
       else
-        @customer_contacts = CustomerContact.all.order("Company_Name ASC").paginate :page => params[:page], :per_page => 30
+        @customer_contacts = CustomerContact.all.order("Company_Name ASC").paginate :page => params[:page], :per_page => 20
       end
     end
 

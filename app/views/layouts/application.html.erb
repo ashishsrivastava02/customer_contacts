@@ -8,11 +8,6 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body >
-    <%= form_tag(customer_contacts_path, :method => "get", id: "search-form") do %>
-        <%= text_field_tag :search, params[:search], placeholder: "Search Contancts" %>
-        <%= submit_tag "Search", :name => nil %>
-    <% end %>
 
     <%= yield %>
   </body>
