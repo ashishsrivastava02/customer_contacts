@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Release Validations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Request</th>
+      <th>Aasm state</th>
+      <th>Scheduled at</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @release_validations.each do |release_validation| %>
+      <tr>
+        <td><%= release_validation.request_id %></td>
+        <td><%= release_validation.aasm_state %></td>
+        <td><%= release_validation.scheduled_at %></td>
+        <td><%= link_to 'Show', release_validation %></td>
+        <td><%= link_to 'Edit', edit_release_validation_path(release_validation) %></td>
+        <td><%= link_to 'Destroy', release_validation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Release Validation', new_release_validation_path %>

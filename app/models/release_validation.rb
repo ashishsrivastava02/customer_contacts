@@ -1,0 +1,2 @@
+class ReleaseValidation < ApplicationRecord
+end

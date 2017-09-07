@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Request:</strong>
+  <%= @release_validation.request_id %>
+</p>
+
+<p>
+  <strong>Aasm state:</strong>
+  <%= @release_validation.aasm_state %>
+</p>
+
+<p>
+  <strong>Scheduled at:</strong>
+  <%= @release_validation.scheduled_at %>
+</p>
+
+<%= link_to 'Edit', edit_release_validation_path(@release_validation) %> |
+<%= link_to 'Back', release_validations_path %>

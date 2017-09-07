@@ -1,0 +1,32 @@
+<%= form_for(release_validation) do |f| %>
+  <% if release_validation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(release_validation.errors.count, "error") %> prohibited this release_validation from being saved:</h2>
+
+      <ul>
+      <% release_validation.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :request_id %>
+    <%= f.number_field :request_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :aasm_state %>
+    <%= f.text_field :aasm_state %>
+  </div>
+
+  <div class="field">
+    <%= f.label :scheduled_at %>
+    <%= f.datetime_select :scheduled_at %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
